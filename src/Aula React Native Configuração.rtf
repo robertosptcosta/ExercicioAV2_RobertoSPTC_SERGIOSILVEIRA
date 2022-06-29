@@ -1,0 +1,82 @@
+// Siga os passos para Configuração der Ambiente
+// Ai final  Instalar expo-cli
+
+
+npm install -g expo-cli
+
+
+// Após a execução :
+set-ExecutionPolicy Unrestricted
+
+// Prof.
+// Após a Configuração do Android Studio - rodar o seguinte comando para instalação
+// do EXPO - (PARA SIMULAR EM DOIS SISTEMAS OPERACIONAIS - ANDROI E IOS)
+
+npm install -g expo-cli
+
+// Depois tem que inicializar o app em EXPO
+expo init
+
+// ABRIR O PROGRAMA - (CODIFICAR O PROGRAMA PARA SIMULAlAR)
+expo start
+
+// DEPOIS CLICA d - (ou seja, Press d │ show developer tools) - (se estiver na
+// mesma rede pode pegar o celular e carregar o QRCode para emular a tela 
+// do nosso aplicativo)
+// daí ele abre o emulador com as mensagens no ternimal
+d
+
+Logs for your project will appear below. Press Ctrl+C to exit.
+Started Metro Bundler
+Opening developer tools in the browser...
+› Press ? │ show all commands
+› Opening emulator Android_Accelerated_x86_Oreo
+//copiar o zip assets da pasta src na aula para a pasta local
+//copiar o icone e o splash para a assets global
+//criar as pastas novas dentro do src
+@types
+//assets
+components
+global
+routes
+//screens
+
+//baixar o Tema para a pasta global > style
+themes.ts 
+
+//criar os arquivos types como módulo ou objeto 
+//a serem utilizados
+png.d.ts 
+svg.d.ts 
+
+//Comandos de instalação de Libs para o App
+// -Instalação Lib para Componentes Gradient
+expo install expo-linear-gradient
+   
+// -Incluir libs navegação
+expo install react-native-screens react-native-safe-area-context
+yarn add @react-navigation/native
+yarn add @react-navigation/stack
+
+
+// -Incluir os controles de texto para disparar eventos
+expo install react-native-gesture-handler
+
+// -install fonts
+expo install  '@expo-google-fonts/nunito' // retirar as aspas para poder rodar aqui
+expo install  @expo-google-fonts/nunito
+
+// Dentro de src
+// Baixar os components para a pasta components
+// Baixar screens para pasta screens
+// Baixar Routes para pasta routes
+// Baixar App.tsx para pasta principal
+
+//Rodar o projeto com yarn android
+yarn android
+
+//ou com expo start
+expo start
+
+//Compilando uma APK
+expo build:android -t apk
